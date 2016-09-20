@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		0C9259621D911654007290CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259611D911654007290CC /* main.m */; };
-		0C9259651D911654007290CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259641D911654007290CC /* AppDelegate.m */; };
-		0C9259681D911654007290CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259671D911654007290CC /* ViewController.m */; };
-		0C92596B1D911654007290CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9259691D911654007290CC /* Main.storyboard */; };
 		0C92596D1D911654007290CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596C1D911654007290CC /* Assets.xcassets */; };
 		0C9259701D911654007290CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596E1D911654007290CC /* LaunchScreen.storyboard */; };
+		0C92597F1D91170F007290CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C92597E1D91170F007290CC /* AppDelegate.m */; };
+		0C9259821D9117B4007290CC /* KYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259811D9117B4007290CC /* KYBaseViewController.m */; };
+		0C9259851D9124F2007290CC /* KYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259841D9124F2007290CC /* KYBaseTableViewController.m */; };
+		0C92598A1D9138BB007290CC /* KYFileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259891D9138BB007290CC /* KYFileCacheManager.m */; };
+		0C9259901D913B9C007290CC /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C92598F1D913B9C007290CC /* NSFileManager+Paths.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C92595D1D911654007290CC /* KYLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9259611D911654007290CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0C9259631D911654007290CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0C9259641D911654007290CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0C9259661D911654007290CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0C9259671D911654007290CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0C92596A1D911654007290CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C92596C1D911654007290CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C92596F1D911654007290CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C9259711D911654007290CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C92597D1D91170F007290CC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C92597E1D91170F007290CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C9259801D9117B4007290CC /* KYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBaseViewController.h; sourceTree = "<group>"; };
+		0C9259811D9117B4007290CC /* KYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseViewController.m; sourceTree = "<group>"; };
+		0C9259831D9124F2007290CC /* KYBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBaseTableViewController.h; sourceTree = "<group>"; };
+		0C9259841D9124F2007290CC /* KYBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseTableViewController.m; sourceTree = "<group>"; };
+		0C9259881D9138BB007290CC /* KYFileCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYFileCacheManager.h; sourceTree = "<group>"; };
+		0C9259891D9138BB007290CC /* KYFileCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYFileCacheManager.m; sourceTree = "<group>"; };
+		0C92598E1D913B9C007290CC /* NSFileManager+Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Paths.h"; sourceTree = "<group>"; };
+		0C92598F1D913B9C007290CC /* NSFileManager+Paths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Paths.m"; sourceTree = "<group>"; };
+		0C9259911D913BF8007290CC /* KYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +66,9 @@
 		0C92595F1D911654007290CC /* KYLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				0C9259631D911654007290CC /* AppDelegate.h */,
-				0C9259641D911654007290CC /* AppDelegate.m */,
-				0C9259661D911654007290CC /* ViewController.h */,
-				0C9259671D911654007290CC /* ViewController.m */,
-				0C9259691D911654007290CC /* Main.storyboard */,
-				0C92596C1D911654007290CC /* Assets.xcassets */,
-				0C92596E1D911654007290CC /* LaunchScreen.storyboard */,
-				0C9259711D911654007290CC /* Info.plist */,
+				0C9259771D91170F007290CC /* Base */,
+				0C9259861D913899007290CC /* Other */,
+				0C92597C1D91170F007290CC /* Application */,
 				0C9259601D911654007290CC /* Supporting Files */,
 			);
 			path = KYLibrary;
@@ -74,9 +77,109 @@
 		0C9259601D911654007290CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C92596C1D911654007290CC /* Assets.xcassets */,
+				0C92596E1D911654007290CC /* LaunchScreen.storyboard */,
+				0C9259711D911654007290CC /* Info.plist */,
 				0C9259611D911654007290CC /* main.m */,
+				0C9259911D913BF8007290CC /* KYPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C9259771D91170F007290CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0C9259781D91170F007290CC /* Controller */,
+				0C9259791D91170F007290CC /* Model */,
+				0C92597A1D91170F007290CC /* Request */,
+				0C92597B1D91170F007290CC /* View */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0C9259781D91170F007290CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C9259801D9117B4007290CC /* KYBaseViewController.h */,
+				0C9259811D9117B4007290CC /* KYBaseViewController.m */,
+				0C9259831D9124F2007290CC /* KYBaseTableViewController.h */,
+				0C9259841D9124F2007290CC /* KYBaseTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C9259791D91170F007290CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C92597A1D91170F007290CC /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		0C92597B1D91170F007290CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C92597C1D91170F007290CC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0C92597D1D91170F007290CC /* AppDelegate.h */,
+				0C92597E1D91170F007290CC /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0C9259861D913899007290CC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0C92598B1D913B9C007290CC /* Category */,
+				0C9259871D913899007290CC /* Tools */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0C9259871D913899007290CC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0C9259881D9138BB007290CC /* KYFileCacheManager.h */,
+				0C9259891D9138BB007290CC /* KYFileCacheManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0C92598B1D913B9C007290CC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0C92598C1D913B9C007290CC /* Foundation */,
+			);
+			name = Category;
+			path = Tools/Category;
+			sourceTree = "<group>";
+		};
+		0C92598C1D913B9C007290CC /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0C92598D1D913B9C007290CC /* NSFileManager */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		0C92598D1D913B9C007290CC /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				0C92598E1D913B9C007290CC /* NSFileManager+Paths.h */,
+				0C92598F1D913B9C007290CC /* NSFileManager+Paths.m */,
+			);
+			path = NSFileManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +208,7 @@
 		0C9259551D911654007290CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KY;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "黄珂耀";
 				TargetAttributes = {
@@ -139,7 +243,6 @@
 			files = (
 				0C9259701D911654007290CC /* LaunchScreen.storyboard in Resources */,
 				0C92596D1D911654007290CC /* Assets.xcassets in Resources */,
-				0C92596B1D911654007290CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,23 +253,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9259681D911654007290CC /* ViewController.m in Sources */,
-				0C9259651D911654007290CC /* AppDelegate.m in Sources */,
+				0C9259851D9124F2007290CC /* KYBaseTableViewController.m in Sources */,
+				0C92597F1D91170F007290CC /* AppDelegate.m in Sources */,
+				0C9259821D9117B4007290CC /* KYBaseViewController.m in Sources */,
+				0C92598A1D9138BB007290CC /* KYFileCacheManager.m in Sources */,
 				0C9259621D911654007290CC /* main.m in Sources */,
+				0C9259901D913B9C007290CC /* NSFileManager+Paths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C9259691D911654007290CC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C92596A1D911654007290CC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C92596E1D911654007290CC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -270,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KYLibrary/KYPrefixHeader.pch";
 				INFOPLIST_FILE = KYLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.KYLibrary";
@@ -281,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KYLibrary/KYPrefixHeader.pch";
 				INFOPLIST_FILE = KYLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.KYLibrary";
