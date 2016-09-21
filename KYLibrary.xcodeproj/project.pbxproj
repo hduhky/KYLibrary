@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0567981D9225970094551D /* KYRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567971D9225970094551D /* KYRequestManager.m */; };
+		0C05679D1D923B190094551D /* KYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C05679C1D923B190094551D /* KYUtils.m */; };
 		0C9259621D911654007290CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259611D911654007290CC /* main.m */; };
 		0C92596D1D911654007290CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596C1D911654007290CC /* Assets.xcassets */; };
 		0C9259701D911654007290CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596E1D911654007290CC /* LaunchScreen.storyboard */; };
@@ -15,9 +17,15 @@
 		0C9259851D9124F2007290CC /* KYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259841D9124F2007290CC /* KYBaseTableViewController.m */; };
 		0C92598A1D9138BB007290CC /* KYFileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259891D9138BB007290CC /* KYFileCacheManager.m */; };
 		0C9259901D913B9C007290CC /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C92598F1D913B9C007290CC /* NSFileManager+Paths.m */; };
+		6108353EDB1BB7DAD65A3CA1 /* libPods-KYLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA9013E41854423881ED825 /* libPods-KYLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0567961D9225970094551D /* KYRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYRequestManager.h; sourceTree = "<group>"; };
+		0C0567971D9225970094551D /* KYRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYRequestManager.m; sourceTree = "<group>"; };
+		0C05679A1D9237320094551D /* KYDefaultHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYDefaultHeader.h; sourceTree = "<group>"; };
+		0C05679B1D923B190094551D /* KYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUtils.h; sourceTree = "<group>"; };
+		0C05679C1D923B190094551D /* KYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUtils.m; sourceTree = "<group>"; };
 		0C92595D1D911654007290CC /* KYLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9259611D911654007290CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C92596C1D911654007290CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +42,9 @@
 		0C92598E1D913B9C007290CC /* NSFileManager+Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Paths.h"; sourceTree = "<group>"; };
 		0C92598F1D913B9C007290CC /* NSFileManager+Paths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Paths.m"; sourceTree = "<group>"; };
 		0C9259911D913BF8007290CC /* KYPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYPrefixHeader.pch; sourceTree = "<group>"; };
+		37FF0A7619402BF12C8EA814 /* Pods-KYLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KYLibrary/Pods-KYLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		F2BC6E9F9461A61BB471021D /* Pods-KYLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KYLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-KYLibrary/Pods-KYLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		FFA9013E41854423881ED825 /* libPods-KYLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KYLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6108353EDB1BB7DAD65A3CA1 /* libPods-KYLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +64,8 @@
 			children = (
 				0C92595F1D911654007290CC /* KYLibrary */,
 				0C92595E1D911654007290CC /* Products */,
+				82F3187B9B9DA50917B65E7F /* Pods */,
+				6C6BEF310B6A9CB9524A9AC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,8 +164,13 @@
 		0C9259871D913899007290CC /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0C05679A1D9237320094551D /* KYDefaultHeader.h */,
 				0C9259881D9138BB007290CC /* KYFileCacheManager.h */,
 				0C9259891D9138BB007290CC /* KYFileCacheManager.m */,
+				0C0567961D9225970094551D /* KYRequestManager.h */,
+				0C0567971D9225970094551D /* KYRequestManager.m */,
+				0C05679B1D923B190094551D /* KYUtils.h */,
+				0C05679C1D923B190094551D /* KYUtils.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -182,6 +201,23 @@
 			path = NSFileManager;
 			sourceTree = "<group>";
 		};
+		6C6BEF310B6A9CB9524A9AC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA9013E41854423881ED825 /* libPods-KYLibrary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82F3187B9B9DA50917B65E7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37FF0A7619402BF12C8EA814 /* Pods-KYLibrary.debug.xcconfig */,
+				F2BC6E9F9461A61BB471021D /* Pods-KYLibrary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C9259741D911654007290CC /* Build configuration list for PBXNativeTarget "KYLibrary" */;
 			buildPhases = (
+				EB60ACDF367C839FFCD69ED3 /* Check Pods Manifest.lock */,
 				0C9259591D911654007290CC /* Sources */,
 				0C92595A1D911654007290CC /* Frameworks */,
 				0C92595B1D911654007290CC /* Resources */,
+				7BDB1284746CDF2FEFD24DC5 /* Embed Pods Frameworks */,
+				36AC37B9A0E6138755E1DAA4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,11 +287,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36AC37B9A0E6138755E1DAA4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KYLibrary/Pods-KYLibrary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BDB1284746CDF2FEFD24DC5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KYLibrary/Pods-KYLibrary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB60ACDF367C839FFCD69ED3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C9259591D911654007290CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0567981D9225970094551D /* KYRequestManager.m in Sources */,
+				0C05679D1D923B190094551D /* KYUtils.m in Sources */,
 				0C9259851D9124F2007290CC /* KYBaseTableViewController.m in Sources */,
 				0C92597F1D91170F007290CC /* AppDelegate.m in Sources */,
 				0C9259821D9117B4007290CC /* KYBaseViewController.m in Sources */,
@@ -294,6 +383,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -341,6 +431,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -366,6 +457,7 @@
 		};
 		0C9259751D911654007290CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37FF0A7619402BF12C8EA814 /* Pods-KYLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KYLibrary/KYPrefixHeader.pch";
@@ -378,6 +470,7 @@
 		};
 		0C9259761D911654007290CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BC6E9F9461A61BB471021D /* Pods-KYLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KYLibrary/KYPrefixHeader.pch";
@@ -407,6 +500,7 @@
 				0C9259761D911654007290CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

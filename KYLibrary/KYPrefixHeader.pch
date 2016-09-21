@@ -9,6 +9,6 @@
 #ifndef KYPrefixHeader_pch
 #define KYPrefixHeader_pch
 
-
+#import "KYDefaultHeader.h"
 
 #endif /* KYPrefixHeader_pch */
