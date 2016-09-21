@@ -24,14 +24,21 @@
 /**
  *  公共富文本
  */
-+ (NSAttributedString *)attStringWithString:(NSString *)string keyWord:(NSString *)keyWord;
++ (NSAttributedString *)attStringWithString:(NSString *)string
+                                    keyWord:(NSString *)keyWord;
 
+/**
+ *  Without lineSpace
+ */
 + (NSAttributedString *)attStringWithString:(NSString *)string
                                     keyWord:(NSString *)keyWord
                                        font:(UIFont *)font
                            highlightedColor:(UIColor *)highlightedcolor
                                   textColor:(UIColor *)textColor;
 
+/**
+ *  With lineSpace
+ */
 + (NSAttributedString *)attStringWithString:(NSString *)string
                                     keyWord:(NSString *)keyWord
                                        font:(UIFont *)font
@@ -45,9 +52,6 @@
  *  判断字符串是否为空
  */
 + (BOOL)isBlankString:(NSString *)string;
-
-/** 是否是当前用户*/
-+ (BOOL)isCurrentUserWithUserId:(NSInteger)userId;
 
 /** color生成image*/
 + (UIImage *)imageWithColor:(UIColor *)color;

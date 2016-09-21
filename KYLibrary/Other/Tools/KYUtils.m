@@ -56,4 +56,106 @@
     return [NSString stringWithFormat:@"%ld年前",years];
 }
 
+//富文本
+
++ (NSAttributedString *)attStringWithString:(NSString *)string
+                                    keyWord:(NSString *)keyWord {
+    return [self attStringWithString:string keyWord:keyWord font:kFont(16) highlightedColor:kRedColor textColor:kBlackColor];
+}
+
++(NSAttributedString *)attStringWithString:(NSString *)string
+                                   keyWord:(NSString *)keyWord
+                                      font:(UIFont *)font
+                          highlightedColor:(UIColor *)highlightedcolor textColor:(UIColor *)textColor {
+    return [self attStringWithString:string keyWord:keyWord font:font highlightedColor:highlightedcolor textColor:textColor lineSpace:2.0];
+}
+
++ (NSAttributedString *)attStringWithString:(NSString *)string
+                                    keyWord:(NSString *)keyWord
+                                       font:(UIFont *)font
+                           highlightedColor:(UIColor *)highlightedcolor
+                                  textColor:(UIColor *)textColor
+                                  lineSpace:(CGFloat)lineSpace {
+    
+//判断string是否存在
+    if (string.length) {
+//创建公共富文本
+        NSMutableAttributedString *attStr = [[NSMutableAttributedString alloc] initWithString:string];
+        NSRange allRange = NSMakeRange(0, string.length);
+        [attStr addAttribute:NSFontAttributeName value:font range:allRange];
+        [attStr addAttribute:NSForegroundColorAttributeName value:textColor range:allRange];
+        NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+        style.lineSpacing = lineSpace;
+        [attStr addAttribute:NSParagraphStyleAttributeName value:style range:allRange];
+//判断关键字key是否存在
+//不存在 返回默认富文本
+        if (!keyWord || keyWord.length == 0) {
+            return attStr;
+        }
+//确定关键字key的range
+        NSRange range = [string rangeOfString:keyWord options:NSCaseInsensitiveSearch];
+//定位到关键字
+        if (range.location != NSNotFound) {
+            [attStr addAttribute:NSForegroundColorAttributeName value:highlightedcolor range:range];
+            return attStr;
+        } else {
+//没有定位到关键字
+            return attStr;
+        }
+    }
+    return [[NSAttributedString alloc] init];
+}
+
+/**
+ 字符串返回非空
+ */
++ (NSString *)validString:(NSString *)string {
+    if ([self isBlankString:string]) {
+        return kEmptyStr;
+    } else {
+        return string;
+    }
+}
+
+/**
+ *判断字符串是否为空
+ */
++ (BOOL)isBlankString:(NSString *)string {
+    if (string == nil || string == NULL) {
+        return YES;
+    }
+    if ([string isKindOfClass:[NSNull class]]) {
+        return YES;
+    }
+    if ([string isKindOfClass:[NSString class]] == NO) {
+        return YES;
+    }
+    if ([[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] length] == 0) {
+        return YES;
+    }
+    if ([string isEqualToString:kEmptyStr]) {
+        return YES;
+    }
+    return NO;
+}
+
+
+/**
+ *用色彩创建图像
+ */
++ (UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+
 @end

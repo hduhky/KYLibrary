@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0C0567981D9225970094551D /* KYRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567971D9225970094551D /* KYRequestManager.m */; };
 		0C05679D1D923B190094551D /* KYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C05679C1D923B190094551D /* KYUtils.m */; };
+		0C0567A01D92905C0094551D /* KYShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C05679F1D92905C0094551D /* KYShareManager.m */; };
+		0C0567A31D9294350094551D /* KYUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567A21D9294350094551D /* KYUserInfoManager.m */; };
+		0C0567A61D9295D40094551D /* KYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567A51D9295D40094551D /* KYBaseModel.m */; };
 		0C9259621D911654007290CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259611D911654007290CC /* main.m */; };
 		0C92596D1D911654007290CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596C1D911654007290CC /* Assets.xcassets */; };
 		0C9259701D911654007290CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596E1D911654007290CC /* LaunchScreen.storyboard */; };
@@ -26,6 +29,12 @@
 		0C05679A1D9237320094551D /* KYDefaultHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYDefaultHeader.h; sourceTree = "<group>"; };
 		0C05679B1D923B190094551D /* KYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUtils.h; sourceTree = "<group>"; };
 		0C05679C1D923B190094551D /* KYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUtils.m; sourceTree = "<group>"; };
+		0C05679E1D92905C0094551D /* KYShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYShareManager.h; sourceTree = "<group>"; };
+		0C05679F1D92905C0094551D /* KYShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYShareManager.m; sourceTree = "<group>"; };
+		0C0567A11D9294350094551D /* KYUserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUserInfoManager.h; sourceTree = "<group>"; };
+		0C0567A21D9294350094551D /* KYUserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUserInfoManager.m; sourceTree = "<group>"; };
+		0C0567A41D9295D40094551D /* KYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBaseModel.h; sourceTree = "<group>"; };
+		0C0567A51D9295D40094551D /* KYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseModel.m; sourceTree = "<group>"; };
 		0C92595D1D911654007290CC /* KYLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9259611D911654007290CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C92596C1D911654007290CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +134,8 @@
 		0C9259791D91170F007290CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C0567A41D9295D40094551D /* KYBaseModel.h */,
+				0C0567A51D9295D40094551D /* KYBaseModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +182,10 @@
 				0C0567971D9225970094551D /* KYRequestManager.m */,
 				0C05679B1D923B190094551D /* KYUtils.h */,
 				0C05679C1D923B190094551D /* KYUtils.m */,
+				0C05679E1D92905C0094551D /* KYShareManager.h */,
+				0C05679F1D92905C0094551D /* KYShareManager.m */,
+				0C0567A11D9294350094551D /* KYUserInfoManager.h */,
+				0C0567A21D9294350094551D /* KYUserInfoManager.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -342,6 +357,9 @@
 			files = (
 				0C0567981D9225970094551D /* KYRequestManager.m in Sources */,
 				0C05679D1D923B190094551D /* KYUtils.m in Sources */,
+				0C0567A31D9294350094551D /* KYUserInfoManager.m in Sources */,
+				0C0567A01D92905C0094551D /* KYShareManager.m in Sources */,
+				0C0567A61D9295D40094551D /* KYBaseModel.m in Sources */,
 				0C9259851D9124F2007290CC /* KYBaseTableViewController.m in Sources */,
 				0C92597F1D91170F007290CC /* AppDelegate.m in Sources */,
 				0C9259821D9117B4007290CC /* KYBaseViewController.m in Sources */,

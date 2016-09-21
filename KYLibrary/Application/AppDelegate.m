@@ -16,6 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    [[KYShareManager sharedInstance] registAllPlatforms];
     
     return YES;
 }
