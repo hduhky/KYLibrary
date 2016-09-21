@@ -12,6 +12,7 @@
 		0C0567A01D92905C0094551D /* KYShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C05679F1D92905C0094551D /* KYShareManager.m */; };
 		0C0567A31D9294350094551D /* KYUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567A21D9294350094551D /* KYUserInfoManager.m */; };
 		0C0567A61D9295D40094551D /* KYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567A51D9295D40094551D /* KYBaseModel.m */; };
+		0C0567AC1D929B250094551D /* KYUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567AB1D929B250094551D /* KYUserInfoModel.m */; };
 		0C9259621D911654007290CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259611D911654007290CC /* main.m */; };
 		0C92596D1D911654007290CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596C1D911654007290CC /* Assets.xcassets */; };
 		0C9259701D911654007290CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596E1D911654007290CC /* LaunchScreen.storyboard */; };
@@ -35,6 +36,8 @@
 		0C0567A21D9294350094551D /* KYUserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUserInfoManager.m; sourceTree = "<group>"; };
 		0C0567A41D9295D40094551D /* KYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYBaseModel.h; sourceTree = "<group>"; };
 		0C0567A51D9295D40094551D /* KYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseModel.m; sourceTree = "<group>"; };
+		0C0567AA1D929B250094551D /* KYUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUserInfoModel.h; sourceTree = "<group>"; };
+		0C0567AB1D929B250094551D /* KYUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUserInfoModel.m; sourceTree = "<group>"; };
 		0C92595D1D911654007290CC /* KYLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9259611D911654007290CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C92596C1D911654007290CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 			children = (
 				0C0567A41D9295D40094551D /* KYBaseModel.h */,
 				0C0567A51D9295D40094551D /* KYBaseModel.m */,
+				0C0567AA1D929B250094551D /* KYUserInfoModel.h */,
+				0C0567AB1D929B250094551D /* KYUserInfoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -359,6 +364,7 @@
 				0C05679D1D923B190094551D /* KYUtils.m in Sources */,
 				0C0567A31D9294350094551D /* KYUserInfoManager.m in Sources */,
 				0C0567A01D92905C0094551D /* KYShareManager.m in Sources */,
+				0C0567AC1D929B250094551D /* KYUserInfoModel.m in Sources */,
 				0C0567A61D9295D40094551D /* KYBaseModel.m in Sources */,
 				0C9259851D9124F2007290CC /* KYBaseTableViewController.m in Sources */,
 				0C92597F1D91170F007290CC /* AppDelegate.m in Sources */,

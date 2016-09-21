@@ -9,10 +9,28 @@
 #ifndef KYPrefixHeader_pch
 #define KYPrefixHeader_pch
 
+/**
+ * 宏定义
+ */
 #import "KYDefaultHeader.h"
+
+/**
+ * 工具
+ */
 #import "KYUtils.h"
 #import "KYFileCacheManager.h"
 #import "KYRequestManager.h"
 #import "KYShareManager.h"
+
+/**
+ * Base
+ */
+#import "KYUserInfoModel.h"
+
+/**
+ * 三方库
+ */
+#import <YYModel.h>
+
 
 #endif /* KYPrefixHeader_pch */
