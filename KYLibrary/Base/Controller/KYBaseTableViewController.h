@@ -8,7 +8,7 @@
 
 #import "KYBaseViewController.h"
 
-@interface KYBaseTableViewController : KYBaseViewController <UITableViewDelegate,UITableViewDataSource>
+@interface KYBaseTableViewController : KYBaseViewController
 
 /** 设置导航栏右边的item*/
 - (void)ky_setUpNavRightItemTitle:(NSString *)itemTitle handle:(void(^)(NSString *rightItemTitle))handle;

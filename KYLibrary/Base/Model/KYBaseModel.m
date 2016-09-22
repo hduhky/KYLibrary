@@ -42,4 +42,27 @@
     }
     return [[self alloc] init];
 }
+
+/**
+ * 描述
+ */
+- (NSString *)description {
+    return [self yy_modelDescription];
+}
+
+/**
+ * 序列化
+ */
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [self yy_modelEncodeWithCoder:aCoder];
+}
+
+/**
+ * 反序列化
+ */
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super init]; return [self yy_modelInitWithCoder:aDecoder];
+}
+
+
 @end

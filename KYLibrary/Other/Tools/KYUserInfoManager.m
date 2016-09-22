@@ -7,8 +7,12 @@
 //
 
 #import "KYUserInfoManager.h"
+#import "KYUserInfoModel.h"
 
 @implementation KYUserInfoManager
+/** 是否登陆*/
+NSString *const kHasLoginFlag = @"kHasLoginFlag";
+
 //单例
 + (instancetype)sharedInstance
 {
@@ -20,9 +24,35 @@
     return sharedInstance;
 }
 
+- (KYUserInfoModel *)currentUserInfo {
+    id obj = [KYFileCacheManager getObjectByFileName:NSStringFromClass([KYUserInfoModel class])];
+    if (obj != nil) {
+        return obj;
+    }
+    return obj;
+}
+
+- (void)resetUserInfoWithUserInfo:(KYUserInfoModel *)userInfo {
+    [userInfo archive];
+}
+
 //登录成功保存用户信息
 - (void)didLoginInWithUserInfo:(id)userInfo {
+    KYUserInfoModel *info = [KYUserInfoModel modelWithDictionary:userInfo];
+    [info archive];
+    [KYFileCacheManager saveUserData:@YES forKey:kHasLoginFlag];
+}
+
+//退出登录移除用户信息
+- (void)didLoginOut {
+    [KYFileCacheManager removeObjectByFileName:NSStringFromClass([KYUserInfoModel class])];
+    [KYFileCacheManager saveUserData:@NO forKey:kHasLoginFlag];
     
 }
+
+- (BOOL)isLogin {
+    return [KYFileCacheManager readUserDataForKey:kHasLoginFlag];
+}
+
 
 @end

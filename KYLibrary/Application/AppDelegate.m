@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "KYDemoHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +17,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
     [[KYShareManager sharedInstance] registAllPlatforms];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
 
+    self.window.rootViewController = [[KYDemoHomeViewController alloc] initWithNibName:kClassName(KYDemoHomeViewController) bundle:nil];
+            
     return YES;
 }
 

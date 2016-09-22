@@ -13,6 +13,12 @@
 */
 #define WeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
+/**
+ * 获取类名
+ */
+#define kClassName(Class) NSStringFromClass([Class class])
+
+
 #pragma mark - 颜色
 #define kWhiteColor [UIColor whiteColor]
 #define kBlackColor [UIColor blackColor]

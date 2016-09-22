@@ -8,7 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+@class KYUserInfoModel;
+
 @interface KYUserInfoManager : NSObject
+
+@property (nonatomic, assign) BOOL isLogin;
+
+/** 是否登陆*/
+UIKIT_EXTERN NSString *const kHasLoginFlag;
 /**
  单例
  */
@@ -27,16 +34,15 @@
 /**
  *  获取用户信息
  */
-//- (NHNeiHanUserInfoModel *)currentUserInfo;
+- (KYUserInfoModel *)currentUserInfo;
 
 /**
  *  更新缓存中的用户信息
  */
-//- (void)resetUserInfoWithUserInfo:(NHNeiHanUserInfoModel *)userInfo;
+- (void)resetUserInfoWithUserInfo:(KYUserInfoModel *)userInfo;
 
 /**
  *  用来记录是否是登陆状态
  */
-@property (nonatomic, assign) BOOL isLogin;
 
 @end

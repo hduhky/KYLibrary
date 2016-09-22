@@ -17,7 +17,6 @@
     NSString *path = [self getFilePathWithFileName:fileName];
     BOOL success = [NSKeyedArchiver archiveRootObject:object toFile:path];
     return success;
-
 }
 
 //通过文件名从沙盒中找到归档的对象
@@ -44,9 +43,7 @@
     return cachesPath;
 }
 
-// 拼接文件路径
-+ (NSString *)appendFilePath:(NSString *)fileName {
-    
++ (NSString *)getFilePathWithFileName:(NSString *)fileName {
     // 1. 沙盒缓存路径
     NSString *cachesPath = [NSFileManager cachesPath];
     
@@ -56,13 +53,9 @@
         [[NSFileManager defaultManager] createDirectoryAtPath:filePath withIntermediateDirectories:NO attributes:nil error:nil];
     }
     
+    filePath = [filePath stringByAppendingString:@".archive"];
+    
     return filePath;
-}
-
-+ (NSString *)getFilePathWithFileName:(NSString *)fileName {
-    NSString *path  = [self appendFilePath:fileName];
-    path = [path stringByAppendingString:@".archive"];
-    return path;
 }
 
 

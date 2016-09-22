@@ -13,6 +13,8 @@
 		0C0567A31D9294350094551D /* KYUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567A21D9294350094551D /* KYUserInfoManager.m */; };
 		0C0567A61D9295D40094551D /* KYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567A51D9295D40094551D /* KYBaseModel.m */; };
 		0C0567AC1D929B250094551D /* KYUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567AB1D929B250094551D /* KYUserInfoModel.m */; };
+		0C3CF7A21D93BCDF005E9F2C /* KYDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF7A01D93BCDF005E9F2C /* KYDemoHomeViewController.m */; };
+		0C3CF7A31D93BCDF005E9F2C /* KYDemoHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C3CF7A11D93BCDF005E9F2C /* KYDemoHomeViewController.xib */; };
 		0C9259621D911654007290CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259611D911654007290CC /* main.m */; };
 		0C92596D1D911654007290CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596C1D911654007290CC /* Assets.xcassets */; };
 		0C9259701D911654007290CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596E1D911654007290CC /* LaunchScreen.storyboard */; };
@@ -38,6 +40,9 @@
 		0C0567A51D9295D40094551D /* KYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYBaseModel.m; sourceTree = "<group>"; };
 		0C0567AA1D929B250094551D /* KYUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYUserInfoModel.h; sourceTree = "<group>"; };
 		0C0567AB1D929B250094551D /* KYUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYUserInfoModel.m; sourceTree = "<group>"; };
+		0C3CF79F1D93BCDF005E9F2C /* KYDemoHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDemoHomeViewController.h; sourceTree = "<group>"; };
+		0C3CF7A01D93BCDF005E9F2C /* KYDemoHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDemoHomeViewController.m; sourceTree = "<group>"; };
+		0C3CF7A11D93BCDF005E9F2C /* KYDemoHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYDemoHomeViewController.xib; sourceTree = "<group>"; };
 		0C92595D1D911654007290CC /* KYLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9259611D911654007290CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C92596C1D911654007290CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +76,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C3CF79B1D93BC68005E9F2C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				0C3CF79C1D93BC68005E9F2C /* Controller */,
+				0C3CF79D1D93BC68005E9F2C /* Model */,
+				0C3CF79E1D93BC68005E9F2C /* View */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		0C3CF79C1D93BC68005E9F2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0C3CF79F1D93BCDF005E9F2C /* KYDemoHomeViewController.h */,
+				0C3CF7A01D93BCDF005E9F2C /* KYDemoHomeViewController.m */,
+				0C3CF7A11D93BCDF005E9F2C /* KYDemoHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C3CF79D1D93BC68005E9F2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C3CF79E1D93BC68005E9F2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0C9259541D911654007290CC = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +131,7 @@
 		0C92595F1D911654007290CC /* KYLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				0C3CF79B1D93BC68005E9F2C /* Demo */,
 				0C9259771D91170F007290CC /* Base */,
 				0C9259861D913899007290CC /* Other */,
 				0C92597C1D91170F007290CC /* Application */,
@@ -302,6 +342,7 @@
 			files = (
 				0C9259701D911654007290CC /* LaunchScreen.storyboard in Resources */,
 				0C92596D1D911654007290CC /* Assets.xcassets in Resources */,
+				0C3CF7A31D93BCDF005E9F2C /* KYDemoHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +411,7 @@
 				0C92597F1D91170F007290CC /* AppDelegate.m in Sources */,
 				0C9259821D9117B4007290CC /* KYBaseViewController.m in Sources */,
 				0C92598A1D9138BB007290CC /* KYFileCacheManager.m in Sources */,
+				0C3CF7A21D93BCDF005E9F2C /* KYDemoHomeViewController.m in Sources */,
 				0C9259621D911654007290CC /* main.m in Sources */,
 				0C9259901D913B9C007290CC /* NSFileManager+Paths.m in Sources */,
 			);

@@ -18,14 +18,19 @@
  * 工具
  */
 #import "KYUtils.h"
+
+/**
+ * Models
+ */
+#import "KYUserInfoModel.h"
+
+/**
+ * Managers
+ */
 #import "KYFileCacheManager.h"
 #import "KYRequestManager.h"
 #import "KYShareManager.h"
-
-/**
- * Base
- */
-#import "KYUserInfoModel.h"
+#import "KYUserInfoManager.h"
 
 /**
  * 三方库
