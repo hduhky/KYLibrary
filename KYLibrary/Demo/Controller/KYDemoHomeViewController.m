@@ -31,7 +31,7 @@
 
 //登录操作
 - (IBAction)loginAction:(id)sender {
-    NSString *deviceToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"DEVICETOKEN"];
+    NSString *deviceToken = [KYFileCacheManager readUserDataForKey:@"DEVICETOKEN"];
     
     NSDictionary *dict = @{
                            @"mobile":@"15958143182",
