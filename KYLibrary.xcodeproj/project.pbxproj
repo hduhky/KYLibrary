@@ -15,6 +15,8 @@
 		0C0567AC1D929B250094551D /* KYUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0567AB1D929B250094551D /* KYUserInfoModel.m */; };
 		0C3CF7A21D93BCDF005E9F2C /* KYDemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3CF7A01D93BCDF005E9F2C /* KYDemoHomeViewController.m */; };
 		0C3CF7A31D93BCDF005E9F2C /* KYDemoHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C3CF7A11D93BCDF005E9F2C /* KYDemoHomeViewController.xib */; };
+		0C4F06E71D9A0D920067C078 /* NSNotification+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F06E61D9A0D920067C078 /* NSNotification+Addition.m */; };
+		0C60767B1D99058D00B48771 /* NHCustomPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C60767A1D99058D00B48771 /* NHCustomPlaceHolderTextView.m */; };
 		0C9259621D911654007290CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9259611D911654007290CC /* main.m */; };
 		0C92596D1D911654007290CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596C1D911654007290CC /* Assets.xcassets */; };
 		0C9259701D911654007290CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C92596E1D911654007290CC /* LaunchScreen.storyboard */; };
@@ -43,6 +45,10 @@
 		0C3CF79F1D93BCDF005E9F2C /* KYDemoHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYDemoHomeViewController.h; sourceTree = "<group>"; };
 		0C3CF7A01D93BCDF005E9F2C /* KYDemoHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYDemoHomeViewController.m; sourceTree = "<group>"; };
 		0C3CF7A11D93BCDF005E9F2C /* KYDemoHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KYDemoHomeViewController.xib; sourceTree = "<group>"; };
+		0C4F06E51D9A0D920067C078 /* NSNotification+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotification+Addition.h"; sourceTree = "<group>"; };
+		0C4F06E61D9A0D920067C078 /* NSNotification+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+Addition.m"; sourceTree = "<group>"; };
+		0C6076791D99058D00B48771 /* NHCustomPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHCustomPlaceHolderTextView.h; sourceTree = "<group>"; };
+		0C60767A1D99058D00B48771 /* NHCustomPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHCustomPlaceHolderTextView.m; sourceTree = "<group>"; };
 		0C92595D1D911654007290CC /* KYLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9259611D911654007290CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C92596C1D911654007290CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +112,32 @@
 		0C3CF79E1D93BC68005E9F2C /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C4F06E41D9A0D680067C078 /* NSNotification */ = {
+			isa = PBXGroup;
+			children = (
+				0C4F06E51D9A0D920067C078 /* NSNotification+Addition.h */,
+				0C4F06E61D9A0D920067C078 /* NSNotification+Addition.m */,
+			);
+			path = NSNotification;
+			sourceTree = "<group>";
+		};
+		0C6076771D99058D00B48771 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0C6076781D99058D00B48771 /* View */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		0C6076781D99058D00B48771 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C6076791D99058D00B48771 /* NHCustomPlaceHolderTextView.h */,
+				0C60767A1D99058D00B48771 /* NHCustomPlaceHolderTextView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +243,7 @@
 		0C9259861D913899007290CC /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0C6076771D99058D00B48771 /* Custom */,
 				0C92598B1D913B9C007290CC /* Category */,
 				0C9259871D913899007290CC /* Tools */,
 			);
@@ -247,6 +280,7 @@
 		0C92598C1D913B9C007290CC /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				0C4F06E41D9A0D680067C078 /* NSNotification */,
 				0C92598D1D913B9C007290CC /* NSFileManager */,
 			);
 			path = Foundation;
@@ -405,6 +439,7 @@
 				0C05679D1D923B190094551D /* KYUtils.m in Sources */,
 				0C0567A31D9294350094551D /* KYUserInfoManager.m in Sources */,
 				0C0567A01D92905C0094551D /* KYShareManager.m in Sources */,
+				0C60767B1D99058D00B48771 /* NHCustomPlaceHolderTextView.m in Sources */,
 				0C0567AC1D929B250094551D /* KYUserInfoModel.m in Sources */,
 				0C0567A61D9295D40094551D /* KYBaseModel.m in Sources */,
 				0C9259851D9124F2007290CC /* KYBaseTableViewController.m in Sources */,
@@ -413,6 +448,7 @@
 				0C92598A1D9138BB007290CC /* KYFileCacheManager.m in Sources */,
 				0C3CF7A21D93BCDF005E9F2C /* KYDemoHomeViewController.m in Sources */,
 				0C9259621D911654007290CC /* main.m in Sources */,
+				0C4F06E71D9A0D920067C078 /* NSNotification+Addition.m in Sources */,
 				0C9259901D913B9C007290CC /* NSFileManager+Paths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
