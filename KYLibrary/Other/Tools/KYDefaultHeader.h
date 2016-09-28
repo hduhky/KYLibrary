@@ -18,6 +18,10 @@
  */
 #define kClassName(Class) NSStringFromClass([Class class])
 
+#define kRGBAColor(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define kRGBColor(r,g,b) kRGBAColor(r,g,b,1.0f)
+#define kCommonBlackColor [UIColor colorWithRed:0.17f green:0.23f blue:0.28f alpha:1.00f]
+#define kSeperatorColor kRGBColor(234,237,240)
 
 #pragma mark - 颜色
 #define kWhiteColor [UIColor whiteColor]
@@ -59,10 +63,12 @@
 #define kFont(size) [UIFont systemFontOfSize:size]
 /***  粗体 */
 #define kBoldFont(size) [UIFont boldSystemFontOfSize:size]
+#define kLineHeight (1 / [UIScreen mainScreen].scale)
 
 #pragma mark - 字符串转化
 #define kEmptyStr @""
 #define kIntToStr(i) [NSString stringWithFormat: @"%d", i]
 #define kIntegerToStr(i) [NSString stringWithFormat: @"%ld", i]
+#define kValidStr(str) [KYUtils validString:str]
 
 #endif /* KYDefaultHeader_h */
